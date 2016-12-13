@@ -156,7 +156,7 @@ h3.widget-title{ background-color:#31cafd; padding:12px 15px; margin:-20px -20px
 .cols-3 h5 span{ font-weight:300; color:#31cafd; }
 .cols-3 ul{ margin:0; padding:0; list-style:inside disc;}
 .cols-3 ul li { display:block; padding:0;}
-.cols-3 ul li a { color:#fff; font:normal 12px/24px Arial, Helvetica, sans-serif; background:url(images/list-arrow.png) no-repeat 0 2px; padding:0 0 0 20px;}
+.cols-3 ul li a { color:#fff; font:normal 12px/24px Arial, Helvetica, sans-serif; padding:0 0 0 20px; float:left;}
 .cols-3 ul li a:hover, .cols-3 ul li.current_page_item a { color:#dd5145; }
 
 .cols-3 a.readmore span{ color:#fff;}
