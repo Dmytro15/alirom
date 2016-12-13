@@ -4,7 +4,7 @@
  * Plugin Name: Widgets for SiteOrigin
  * Plugin URI: http://widgets.wpinked.com/
  * Description: A collection of highly customizable and thoughtfully crafted widgets. Built on top of the SiteOrigin Widgets Bundle.
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: wpinked
  * Author URI: widgets.wpinked.com
  * License: GPL-2.0+
@@ -18,7 +18,7 @@
  *
  */
 
-define( 'INKED_SO_VER', '1.3.1' );
+define( 'INKED_SO_VER', '1.3.2' );
 
 // Allow JS suffix to be pre-set
 if( !defined( 'INKED_JS_SUFFIX' ) ) {

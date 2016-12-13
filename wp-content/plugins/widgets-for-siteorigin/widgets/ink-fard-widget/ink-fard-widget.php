@@ -366,18 +366,16 @@ class Inked_Filter_Accordion_SO_Widget extends SiteOrigin_Widget {
 	}
 
 	function get_google_font_fields( $instance ) {
-		if( empty( $instance ) ) return;
+		if( empty( $instance ) || ! function_exists( 'wpinked_pro_so_widgets' ) ) return array();
 
-		if ( function_exists( 'wpinked_pro_so_widgets' ) ) {
-			$fonts = array();
-			if ( $instance['styling']['title-font'] ) {
-				$fonts[] = $instance['styling']['title-font'];
-			}
-			if ( $instance['styling']['type-font'] ) {
-				$fonts[] = $instance['styling']['type-font'];
-			}
-			return $fonts;
+		$fonts = array();
+		if ( $instance['styling']['title-font'] ) {
+			$fonts[] = $instance['styling']['title-font'];
 		}
+		if ( $instance['styling']['type-font'] ) {
+			$fonts[] = $instance['styling']['type-font'];
+		}
+		return $fonts;
 	}
 
 }

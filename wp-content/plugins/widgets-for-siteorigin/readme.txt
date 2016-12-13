@@ -2,8 +2,8 @@
 Contributors: iamadi
 Tags: bundle, widget, button, alert, accordion, audio, video, blog, divider, person, portfolio, tabs, testimonial, siteorigin
 Requires at least: 3.9
-Tested up to: 4.6.1
-Stable tag: 1.3.1
+Tested up to: 4.7
+Stable tag: 1.3.2
 License: GPLv3 or later
 
 A collection of highly customizable and thoughtfully crafted widgets. Built on top of the SiteOrigin Widgets Bundle.
@@ -87,6 +87,9 @@ Once installed, you can choose to Active/Deactivate widget from Plugins -> SiteO
 1. Manage which widgets you want enabled or disabled.
 
 == Changelog ==
+
+= 1.3.2 - December 12 2016  =
+* Fixed bug with rendering font fields
 
 = 1.3.1 - November 29 2016  =
 * Removed unnecessary font-family: inherit; property.

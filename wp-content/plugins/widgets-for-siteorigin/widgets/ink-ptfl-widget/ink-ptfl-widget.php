@@ -312,21 +312,19 @@ class Inked_Folio_SO_Widget extends SiteOrigin_Widget {
 	}
 
 	function get_google_font_fields( $instance ) {
-		if( empty( $instance ) ) return;
+		if( empty( $instance ) || ! function_exists( 'wpinked_pro_so_widgets' ) ) return array();
 
-		if ( function_exists( 'wpinked_pro_so_widgets' ) ) {
-			$fonts = array();
-			if ( $instance['styling']['type-font'] ) {
-				$fonts[] = $instance['styling']['type-font'];
-			}
-			if ( $instance['styling']['p-title-font'] ) {
-				$fonts[] = $instance['styling']['p-title-font'];
-			}
-			if ( $instance['styling']['p-cats-font'] ) {
-				$fonts[] = $instance['styling']['p-cats-font'];
-			}
-			return $fonts;
+		$fonts = array();
+		if ( $instance['styling']['type-font'] ) {
+			$fonts[] = $instance['styling']['type-font'];
 		}
+		if ( $instance['styling']['p-title-font'] ) {
+			$fonts[] = $instance['styling']['p-title-font'];
+		}
+		if ( $instance['styling']['p-cats-font'] ) {
+			$fonts[] = $instance['styling']['p-cats-font'];
+		}
+		return $fonts;
 	}
 
 }

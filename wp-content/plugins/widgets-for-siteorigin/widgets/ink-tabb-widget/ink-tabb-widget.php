@@ -249,13 +249,14 @@ class Inked_Tabs_SO_Widget extends SiteOrigin_Widget {
 
 	}
 
-	function less_import_google_font( $instance, $args ) {
-		if( empty( $instance ) ) return;
+	function get_google_font_fields( $instance ) {
+		if( empty( $instance ) || ! function_exists( 'wpinked_pro_so_widgets' ) ) return array();
 
-		if ( $instance['styling']['tab-font'] && function_exists( 'wpinked_pro_so_widgets' ) ) {
-			$selected_font = siteorigin_widget_get_font( $instance['styling']['tab-font'] );
-			return $selected_font['css_import'];
+		$fonts = array();
+		if ( $instance['styling']['tab-font'] ) {
+			$fonts[] = $instance['styling']['tab-font'];
 		}
+		return $fonts;
 	}
 
 }
